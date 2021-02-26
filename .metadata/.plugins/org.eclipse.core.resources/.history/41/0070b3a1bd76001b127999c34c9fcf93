@@ -1,0 +1,14 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DoDesafio {
+
+	public static void main(String[] args) {
+		
+		int = Integer.parseInt(JOptionPane.showInputDialog("Chute 1 numero: "));
+		
+
+	}
+
+}

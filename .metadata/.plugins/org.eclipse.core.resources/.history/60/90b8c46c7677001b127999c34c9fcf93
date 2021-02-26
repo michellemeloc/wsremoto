@@ -1,0 +1,33 @@
+package br.com.concessionaria.principal;
+
+import javax.swing.JOptionPane;
+
+import br.com.concessionaria.modelo.Carro;
+
+public class TesteCarro {
+
+	//tem main porque é onde roda a aplicação
+	public static void main(String[] args) {
+		
+		//instanciando (preparar memoria ram e no objeto tem as repartições) um objeto:
+		Carro objeto = new Carro();
+		
+		objeto.preencherValor(JOptionPane.showInputDialog("Digite o valor: "));
+		System.out.println(objeto.retornarValor());
+		
+		//objeto.preencherCor("azul");
+		objeto.preencherCor(JOptionPane.showInputDialog("Digite a cor"));
+		System.out.println(objeto.retornarCor());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

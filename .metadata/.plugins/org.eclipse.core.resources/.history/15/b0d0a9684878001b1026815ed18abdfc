@@ -1,0 +1,20 @@
+package br.com.ecommerce.modelo;
+
+import br.com.ecommerce.principal.Cliente;
+
+public class TesteCliente {
+
+	public static void main(String[] args) {
+		
+		Cliente c = new Cliente();
+		
+		c.setEmail("mi@itau");
+		
+		System.out.println(c.getEmail().substring(0, c.getEmail().indexOf("@")));
+		
+		
+		
+
+	}
+
+}

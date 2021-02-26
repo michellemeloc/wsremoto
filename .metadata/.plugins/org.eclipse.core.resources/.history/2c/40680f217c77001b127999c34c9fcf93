@@ -1,0 +1,51 @@
+package br.com.concessionaria.modelo;
+
+public class Carro {
+	
+	private float valor;
+	private String cor;
+	private boolean status;
+	private short velocidadeAtual;
+	private String modelo;
+
+	public float retornarValor() {
+		return valor;
+	}
+	
+	public String retornarCor(){
+		return cor;
+	}
+	
+	public boolean estarLigado() {
+		return status;
+	}
+	
+	
+	//Sintaxe para os métodos
+	//<modificador> <tipo do retorno> <nome do metodo> (<tipo do parametro> <nome do parametro>)
+	
+	public void preencherValor(float param) {
+		valor = param;
+	}
+		
+	public void preencherCor(String param) {
+		cor = param.toUpperCase();
+	}
+	
+	public void ligar() {
+		 status = true;
+	}
+	
+	public void desligar() {
+		 status = false;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

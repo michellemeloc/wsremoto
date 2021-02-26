@@ -1,0 +1,107 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ForExercicios {
+ 
+	public static void main(String[] args) {
+		
+		/*
+		 * 
+		 * Exercio 1
+		 * 
+		 * 
+		int dia = Integer.parseInt(JOptionPane.showInputDialog("Dia"));
+		int mes = Integer.parseInt(JOptionPane.showInputDialog("Mes"));
+		int ano = Integer.parseInt(JOptionPane.showInputDialog("Ano"));
+	
+		
+		while(dia>31 || dia<0) {
+			System.out.println("Dia deve ser menor que 31");
+			dia = Integer.parseInt(JOptionPane.showInputDialog("Digite novamente o dia"));
+		}
+		
+		while(mes>12 || dia<0) {
+			System.out.println("Dia deve ser menor que 12");
+			mes = Integer.parseInt(JOptionPane.showInputDialog("Digite novamente o Mes"));
+		}
+		
+		while (ano<1000 || ano>9999) {
+			System.out.println("Dia deve estar entre 1000 e 9999");
+			ano = Integer.parseInt(JOptionPane.showInputDialog("Digite novamente o Ano"));
+			
+		}
+		
+		System.out.println(dia + " " + mes + " " + ano);
+	
+	*/
+		
+	//Exercicio 2
+		
+		String escol = JOptionPane.showInputDialog("Nivel de escolaridada (Medio, Superior ou Pos)").toUpperCase();
+		int contadorMedio = 0;
+		int contadorSup = 0;
+		int contadorPos = 0;
+
+
+		while(!escol.equals("MEDIO")) {
+			//System.out.println("Dia deve ser menor que 31");
+			escol = JOptionPane.showInputDialog("Nivel de escolaridade");
+		}
+
+		while(!escol.equals("SUPERIOR")) {
+			//System.out.println("Dia deve ser menor que 31");
+			escol = JOptionPane.showInputDialog("Nivel de escolaridade");
+		}		
+		
+		while(!escol.equals("POS")) {
+			//System.out.println("Dia deve ser menor que 31");
+			escol = JOptionPane.showInputDialog("Nivel de escolaridade");
+		}
+		
+		System.out.println("ok!");
+
+		
+	/*	
+		String resposta = "";
+		int contadorMedio = 0;
+		int contadorSup = 0;
+		int contadorPos = 0;
+		
+		
+		do {
+			String escol = JOptionPane.showInputDialog("Nivel de escolaridada (Medio, Superior ou Pos)").toUpperCase();
+			//System.out.println("Mais votado: " + (salario*0.08));
+			//resposta = JOptionPane.showInputDialog("Digite S para continuar").toUpperCase();
+			
+			if (escol.contains("MEDIO")) {
+				contadorMedio = contadorMedio+1;
+			}else if(escol.contains("SUPERIOR")) {
+				contadorSup = contadorSup+1;
+			}else if(escol.contains("POS")) {
+				contadorPos = contadorPos+1;
+			}else {
+				System.out.println("Verifique sua resposta");
+			}
+		
+		}while (escol.contains("MEDIO") || escol.contains("SUPERIOR") || escol.contains("POS"));
+		//while(resposta.equals("S"));
+		
+		if (contadorMedio > contadorSup && contadorMedio > contadorPos) {
+			System.out.println("Resultado: " + contadorMedio);
+		}else if(contadorSup > contadorMedio && contadorSup > ContadorPos) {
+			System.out.println("Resultado: " + contadorSup);
+		}else {
+			System.out.println("Resultado: " + contadorPos);
+		}
+		
+		
+		}	
+		
+		
+		*/
+		
+		
+		
+	}
+}

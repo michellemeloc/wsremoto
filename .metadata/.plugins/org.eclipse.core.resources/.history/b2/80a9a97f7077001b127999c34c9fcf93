@@ -1,0 +1,25 @@
+package br.com.concessionaria.principal;
+
+import br.com.concessionaria.modelo.Carro;
+
+public class TesteCarro {
+
+	//tem main porque é onde roda a aplicação
+	public static void main(String[] args) {
+		
+		//instanciando (preparar memoria ram e no objeto tem as repartições) um objeto:
+		Carro objeto = new Carro();
+		objeto.cor = "azul";
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

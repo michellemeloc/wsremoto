@@ -1,0 +1,34 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ForExercicios {
+ 
+	public static void main(String[] args) {
+		
+		int dia = Integer.parseInt(JOptionPane.showInputDialog("Dia"));
+		int mes = Integer.parseInt(JOptionPane.showInputDialog("Mes"));
+		int ano = Integer.parseInt(JOptionPane.showInputDialog("Ano"));
+	
+		
+		while(dia>31 || dia<0) {
+			System.out.println("Dia deve ser menor que 31");
+			dia = Integer.parseInt(JOptionPane.showInputDialog("Digite novamente o dia"));
+		}
+		
+		while(mes>12 || dia<0) {
+			System.out.println("Dia deve ser menor que 12");
+			mes = Integer.parseInt(JOptionPane.showInputDialog("Digite novamente o Mes"));
+		}
+		
+		while (ano<1000 || ano>9999) {
+			System.out.println("Dia deve estar entre 1000 e 9999");
+			ano = Integer.parseInt(JOptionPane.showInputDialog("Digite novamente o Ano"));
+			
+		}
+		
+		System.out.println(dia + " " + mes + " " + ano);
+	}
+	
+	
+}

@@ -1,0 +1,20 @@
+package br.com.ecommerce.principal;
+
+import br.com.ecommerce.modelo.Produto;
+
+public class TesteProduto {
+
+	public static void main(String[] args) {
+		
+		Produto objeto = new Produto();
+		
+		objeto.setValorCompra((float) 5);
+		objeto.setQntd((int) 2);
+		System.out.println(objeto.getTotalCompra());
+		
+		
+		
+		
+	}
+	
+}

@@ -1,0 +1,74 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DoDesafio {
+
+	public static void main(String[] args) {
+
+		int valor = Integer.parseInt(JOptionPane.showInputDialog("Digite o valor"));
+		int chute = 0;
+		
+		do {
+		//linha que tem que se repetir joga no Do. Boa prática variável criada fora do laço primeiro
+			chute = Integer.parseInt(JOptionPane.showInputDialog("Advinhe o valor"));
+		
+		if (chute>valor) {
+			System.out.println("Valor chutado foi mais alto");
+		}else if (chute<valor){
+			System.out.println("Valor chutado foi mais baixo");
+		}
+		
+		}while(valor!=chute);
+		
+		System.out.println("Parabéns!");
+		
+		
+		
+		/*
+		 * Missão 1:
+		 */
+		
+		
+		/*
+		int num = 1;
+		//Random num = random.nextInt(2); 
+
+		do{
+		int numero = Integer.parseInt(JOptionPane.showInputDialog("Advinhe o numero"));	
+		System.out.println("FGTS: " + (salario*0.08));
+		resposta = JOptionPane.showInputDialog("Digite S para continuar").toUpperCase();
+		
+		}while (numero!=num) {
+			System.out.printf("Errado");
+			
+			
+		}
+		
+		
+		
+		/*
+		 * while (numero!=num){
+
+			if (num<numero){
+				System.out.printf("Errou. O número é maior.");
+				//num = porta.nextInt();
+
+			}else {
+				System.out.printf("Errou. O número é menor.");
+				//num = porta.nextInt();	
+			}	
+		} 
+
+		if (numero==num){
+			System.out.println("Você acertou!");
+		}
+		 */
+		
+			
+		
+	
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class WhileDesafio {
+
+	public static void main(String[] args) {
+		
+		String nome = JOptionPane.showInputDialog("Nome ").toLowerCase();
+		short idade = Short.parseShort(JOptionPane.showInputDialog("Idade "));
+		
+			
+		while(nome.length()<5 && nome.length()>15 && idade>=18 && idade<=70) {
+			nome = JOptionPane.showInputDialog("Ajuste o nome").toLowerCase();
+			//idade = JOptionPane.showInputDialog("Ajuste a idade");
+		}
+
+		System.out.println("Nome: " + nome + "\nIdade: " + idade);
+
+		}
+
+	}
+

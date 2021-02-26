@@ -1,0 +1,36 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class DoDesafio {
+
+	public static void main(String[] args) {
+
+		int num = 1;
+		//Random num = random.nextInt(2); 
+
+		int numero = Integer.parseInt(JOptionPane.showInputDialog("Advinhe o numero: "));
+
+		while (numero!=num){
+			if (num<numero){
+				System.out.printf("Errou. O número é maior.");
+				//num = porta.nextInt();
+
+			}else {
+				System.out.printf("Errou. O número é menor.");
+				//num = porta.nextInt();	
+			}	
+		} 
+		
+		if (numero==num){
+			System.out.println("Você acertou!");
+		}
+
+		
+			
+		
+	
+
+	}
+
+}

@@ -1,0 +1,37 @@
+package decisao;
+
+import javax.swing.JOptionPane;
+
+public class DecisaoCompostaDesafio {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Capture dois times e os seus placares
+		 * Exiba,
+		 * "time 1 venceu"
+		 * ou
+		 * "time 2 venceu"
+		 * ou
+		 * "Houve um empate"
+		 *  
+		 */
+		
+		
+		short Ptime1 = Short.parseShort(JOptionPane.showInputDialog("Placar Time 1: "));
+		short Ptime2 = Short.parseShort(JOptionPane.showInputDialog("Placar Time 2: "));
+
+		if(Ptime1 > Ptime2) {
+			System.out.println("Time 1 venceu!");
+		}else if(Ptime1 < Ptime2){
+			System.out.println("Time 2 venceu!");
+		}else {
+			System.out.println("Empate.");
+		}
+
+		System.out.println("Placar time 1: " + Ptime1 + "\n Placar time 2: " + Ptime2);			
+
+
+	}
+
+}

@@ -1,0 +1,21 @@
+package repeticao;
+
+import javax.swing.JOptionPane;
+
+public class ForExercicios {
+ 
+	public static void main(String[] args) {
+		
+		int dia = Integer.parseInt(JOptionPane.showInputDialog("Dia"));
+		//int mes = Integer.parseInt(JOptionPane.showInputDialog("Mes"));
+		//int ano = Integer.parseInt(JOptionPane.showInputDialog("Ano"));
+	
+		
+		for (int dia=0;dia<31;dia++) {
+			System.out.println(dia);
+		}
+		
+		
+	}
+	
+}

@@ -1,0 +1,26 @@
+package br.com.caicai.implementacao;
+
+import br.com.caicai.modelo.Elevador;
+
+public class TesteElevador {
+
+	public static void main(String[] args) {
+		
+		Elevador objeto = new Elevador();
+
+		objeto.preencherNome("Michelle");
+				
+		objeto.configurar((short)10, (short)1, (byte)5);
+		//System.out.println(objeto);
+		
+		objeto.subir((byte) 6);
+		objeto.descer((byte) 3);
+		objeto.entrar((byte) 4);
+		objeto.sair((byte) 1);
+		
+		System.out.println(objeto.exibirResumo());
+		
+		
+	}
+
+}

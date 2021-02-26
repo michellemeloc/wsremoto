@@ -1,0 +1,93 @@
+package br.com.ecommerce.modelo;
+
+/*
+ * Design Pattern - Compilado com as melhores práticas para 00
+ * DTO (Data Transfer Object) = TO = Beans = Modelo... várias nomenclaturas
+ * Recomendações:
+ *   1. todos os atributos devem ser privados
+ *   2. cada atributo deve possuir um método para input (GET) e outro para output (SET)
+ *   3. ????
+ */
+
+public class Produto {
+
+	private int id;
+	private String descricao;
+	private float valorCompra;
+	private float valorVenda;
+	private int qntd;
+	
+	
+	//GET - Retornar
+	//SET - Preencher
+	
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDescricao() {
+		return descricao;
+	}
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+	public float getValorCompra() {
+		return valorCompra;
+	}
+	public void setValorCompra(float valorCompra) {
+		this.valorCompra = valorCompra;
+	}
+	public float getValorVenda() {
+		return valorVenda;
+	}
+	public void setValorVenda(float valorVenda) {
+		this.valorVenda = valorVenda;
+	}
+	public int getQntd() {
+		return qntd;
+	}
+	public void setQntd(int qntd) {
+		this.qntd = qntd;
+	}
+	
+	public float getTotalCompra() {
+		return valorCompra * qntd;
+	}
+	
+	public float getDesconto() {
+		return valorVenda*(float)0.9;
+	}
+	
+	public String getResumo() {
+		return "Descrição: " + descricao + 
+				"\nValor da venda: " + valorVenda + 
+				"\nQuantidade: " + qntd; 
+	}
+	
+	public String setAll(int id, String descricao, float valorCompra,
+			float valorVenda, int qntd) {
+		return "ID: " + id +
+				"\nDescrição: " + descricao +
+				"\nValor de compra: " + valorCompra +
+				"\nValor da venda: " + valorVenda + 
+				"\nQuantidade: " + qntd;
+	}
+	
+		
+	public String verificarEstoque() {
+		if (qntd > 10) {
+			return "Estoque alto";
+		}
+		if (qntd < 5) {
+			return "Estoque baixo";
+		} 
+		return "Estoque medio";
+
+	}
+	
+	
+	
+	
+}
